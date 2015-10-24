@@ -89,9 +89,11 @@ def save_define(file_list):
     file_object.write("local Luadatas = {\n")
     for filename in file_list:
         if filename == file_list[-1]:
-            file_object.write("[\"%s\"] = import (\"app.lua_config.%s\"),\n"%(filename, filename))
+            file_object.write("\t[\"%s\"] = import (\"app.lua_config.%s\")\n"%(filename, filename))
         else:
-            file_object.write("[\"%s\"] = import (\"app.lua_config.%s\")\n"%(filename, filename))
+            file_object.write("\t[\"%s\"] = import (\"app.lua_config.%s\"),\n"%(filename, filename))
+    file_object.write("}\n")
+    file_object.write("\n")
     file_object.write("return Luadatas")
     file_object.close()
 
