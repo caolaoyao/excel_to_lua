@@ -1,16 +1,16 @@
-local Team = {}
+local team = {}
 
 local ConfigData = {
-	[1] = {'dec': 'abc', 'id': 1},
-	[2] = {'dec': 'adg', 'id': 2}
+	[1]={id=1,dec="abc"},
+	[2]={id=2,dec="adg"}
 }
 
-function Team.GetConfig(id)
+function team.GetConfig(id)
 	return ConfigData[id]
 end
 
-function Team.GetAllConfig()
+function team.GetAllConfig()
 	return ConfigData.value
 end
 
-return Team
+return team

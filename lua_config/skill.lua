@@ -1,16 +1,16 @@
-local Skill = {}
+local skill = {}
 
 local ConfigData = {
-	[1] = {'dec': 'abc', 'id': 1},
-	[2] = {'dec': 'adg', 'id': 2}
+	[1]={id=1,dec="abc"},
+	[2]={id=2,dec="adg"}
 }
 
-function Skill.GetConfig(id)
+function skill.GetConfig(id)
 	return ConfigData[id]
 end
 
-function Skill.GetAllConfig()
+function skill.GetAllConfig()
 	return ConfigData.value
 end
 
-return Skill
+return skill

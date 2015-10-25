@@ -1,16 +1,16 @@
-local Pet = {}
+local pet = {}
 
 local ConfigData = {
-	[1] = {'dec': 'abc', 'id': 1},
-	[2] = {'dec': 'adg', 'id': 2}
+	[1]={id=1,dec="abc"},
+	[2]={id=2,dec="adg"}
 }
 
-function Pet.GetConfig(id)
+function pet.GetConfig(id)
 	return ConfigData[id]
 end
 
-function Pet.GetAllConfig()
+function pet.GetAllConfig()
 	return ConfigData.value
 end
 
-return Pet
+return pet

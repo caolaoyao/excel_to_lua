@@ -1,35 +1,35 @@
-local Role = {}
+local role = {}
 
 local ConfigData = {
-	[1] = {'dec': 'abc', 'id': 1},
-	[2] = {'dec': 'adg', 'id': 2},
-	[3] = {'dec': 'adg', 'id': 3},
-	[4] = {'dec': 'adg', 'id': 4},
-	[5] = {'dec': 'adg', 'id': 5},
-	[6] = {'dec': 'adg', 'id': 6},
-	[7] = {'dec': 'adg', 'id': 7},
-	[8] = {'dec': 'adg', 'id': 8},
-	[9] = {'dec': 'adg', 'id': 9},
-	[10] = {'dec': 'adg', 'id': 10},
-	[11] = {'dec': 'adg', 'id': 11},
-	[12] = {'dec': 'adg', 'id': 12},
-	[13] = {'dec': 'adg', 'id': 13},
-	[14] = {'dec': 'adg', 'id': 14},
-	[15] = {'dec': 'adg', 'id': 15},
-	[16] = {'dec': 'adg', 'id': 16},
-	[17] = {'dec': 'adg', 'id': 17},
-	[18] = {'dec': 'adg', 'id': 18},
-	[19] = {'dec': 'adg', 'id': 19},
-	[20] = {'dec': 'adg', 'id': 20},
-	[21] = {'dec': 'adg', 'id': 21}
+	[1]={id=1,dec="abc"},
+	[2]={id=2,dec="adg"},
+	[3]={id=3,dec="adg"},
+	[4]={id=4,dec="adg"},
+	[5]={id=5,dec="adg"},
+	[6]={id=6,dec="adg"},
+	[7]={id=7,dec="adg"},
+	[8]={id=8,dec="adg"},
+	[9]={id=9,dec="adg"},
+	[10]={id=10,dec="adg"},
+	[11]={id=11,dec="adg"},
+	[12]={id=12,dec="adg"},
+	[13]={id=13,dec="adg"},
+	[14]={id=14,dec="adg"},
+	[15]={id=15,dec="adg"},
+	[16]={id=16,dec="adg"},
+	[17]={id=17,dec="adg"},
+	[18]={id=18,dec="adg"},
+	[19]={id=19,dec="adg"},
+	[20]={id=20,dec="adg"},
+	[21]={id=21,dec="adg"}
 }
 
-function Role.GetConfig(id)
+function role.GetConfig(id)
 	return ConfigData[id]
 end
 
-function Role.GetAllConfig()
+function role.GetAllConfig()
 	return ConfigData.value
 end
 
-return Role
+return role

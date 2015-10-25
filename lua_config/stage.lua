@@ -1,16 +1,16 @@
-local Stage = {}
+local stage = {}
 
 local ConfigData = {
-	[1] = {'dec': 'abc', 'id': 1},
-	[2] = {'dec': 'adg', 'id': 2}
+	[1]={id=1,dec="abc"},
+	[2]={id=2,dec="adg"}
 }
 
-function Stage.GetConfig(id)
+function stage.GetConfig(id)
 	return ConfigData[id]
 end
 
-function Stage.GetAllConfig()
+function stage.GetAllConfig()
 	return ConfigData.value
 end
 
-return Stage
+return stage
